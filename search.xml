@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[supervisor常用命令]]></title>
+    <url>%2F2019%2F01%2F27%2Fsupervisor%2F</url>
+    <content type="text"><![CDATA[启动服务 supervisorctld -c /etc/supervisorctld.conf 更新配置 supervisorctl update 重启 supervisorctl reload 启动 supervisorctl start app_name 停止 supervisorctl stop app_name 重新启动 supervisorctl restart app_name 全部停止 supervisorctl stop all]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[List 集合去除 null 元素]]></title>
+    <url>%2F2019%2F01%2F05%2Fjava%2FList%20%E9%9B%86%E5%90%88%E5%8E%BB%E9%99%A4%20null%20%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"><![CDATA[javaoldList.removeAll(Collections.singleton(null));]]></content>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F01%2F05%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post$ hexo new "My New Post" More info: Writing Run server$ hexo server More info: Server Generate static files$ hexo generate More info: Generating Deploy to remote sites$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>

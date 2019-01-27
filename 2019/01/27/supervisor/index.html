@@ -96,24 +96,25 @@
 
 
 
-  <meta name="description" content="javahello word">
+  <meta name="description" content="启动服务 supervisorctld -c /etc/supervisorctld.conf 更新配置 supervisorctl update 重启 supervisorctl reload 启动 supervisorctl start app_name 停止 supervisorctl stop app_name 重新启动 supervisorctl restart app_name 全部停">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java">
-<meta property="og:url" content="https://li-yongguang.github.io/2019/01/05/java/java/index.html">
+<meta property="og:title" content="supervisor常用命令">
+<meta property="og:url" content="https://li-yongguang.github.io/2019/01/27/supervisor/index.html">
 <meta property="og:site_name" content="熟能生巧">
-<meta property="og:description" content="javahello word">
+<meta property="og:description" content="启动服务 supervisorctld -c /etc/supervisorctld.conf 更新配置 supervisorctl update 重启 supervisorctl reload 启动 supervisorctl start app_name 停止 supervisorctl stop app_name 重新启动 supervisorctl restart app_name 全部停">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-05T14:45:10.595Z">
+<meta property="og:updated_time" content="2019-01-27T11:05:48.025Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java">
-<meta name="twitter:description" content="javahello word">
+<meta name="twitter:title" content="supervisor常用命令">
+<meta name="twitter:description" content="启动服务 supervisorctld -c /etc/supervisorctld.conf 更新配置 supervisorctl update 重启 supervisorctl reload 启动 supervisorctl start app_name 停止 supervisorctl stop app_name 重新启动 supervisorctl restart app_name 全部停">
 
 
 
 
 
 
-  <link rel="canonical" href="https://li-yongguang.github.io/2019/01/05/java/java/">
+  <link rel="canonical" href="https://li-yongguang.github.io/2019/01/27/supervisor/">
 
 
 
@@ -123,7 +124,7 @@
   };
 </script>
 
-  <title>java | 熟能生巧</title>
+  <title>supervisor常用命令 | 熟能生巧</title>
   
 
 
@@ -188,7 +189,7 @@
     </div>
     
       
-        <p class="site-subtitle">李永光的技术地</p>
+        <p class="site-subtitle">李永光的实验研究室</p>
       
     
     
@@ -247,6 +248,23 @@
         
         
           
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-tags">
 
     
@@ -264,7 +282,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-about">
 
     
     
@@ -274,7 +292,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
 
@@ -326,7 +344,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://li-yongguang.github.io/2019/01/05/java/java/">
+    <link itemprop="mainEntityOfPage" href="https://li-yongguang.github.io/2019/01/27/supervisor/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李永光">
@@ -343,7 +361,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java
+          <h1 class="post-title" itemprop="name headline">supervisor常用命令
 
               
             
@@ -369,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2019-01-05 22:43:48 / 修改时间：22:45:10" itemprop="dateCreated datePublished" datetime="2019-01-05T22:43:48+08:00">2019-01-05</time>
+              <time title="创建时间：2019-01-27 18:40:29 / 修改时间：19:05:48" itemprop="dateCreated datePublished" datetime="2019-01-27T18:40:29+08:00">2019-01-27</time>
             
 
             
@@ -407,7 +425,20 @@
       
 
       
-        <h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">hello word</span><br></pre></td></tr></table></figure>
+        <p>启动服务</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctld -c /etc/supervisorctld.conf</span><br></pre></td></tr></table></figure>
+<p>更新配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl update</span><br></pre></td></tr></table></figure>
+<p>重启</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl reload</span><br></pre></td></tr></table></figure>
+<p>启动</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl start app_name</span><br></pre></td></tr></table></figure>
+<p>停止</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl stop app_name</span><br></pre></td></tr></table></figure>
+<p>重新启动</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl restart app_name</span><br></pre></td></tr></table></figure>
+<p>全部停止</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">supervisorctl stop all</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -429,6 +460,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
 
       
       
@@ -438,8 +475,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/05/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/01/05/java/List 集合去除 null 元素/" rel="next" title="List 集合去除 null 元素">
+                <i class="fa fa-chevron-left"></i> List 集合去除 null 元素
               </a>
             
           </div>
@@ -491,17 +528,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -516,7 +544,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -524,6 +552,21 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -545,23 +588,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java"><span class="nav-number">1.</span> <span class="nav-text">java</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
